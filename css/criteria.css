@@ -1,0 +1,416 @@
+/* ── Criteria Page CSS (criteria.html) ── */
+
+/* ── Hero / Page Intro ── */
+.criteria-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.criteria-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--c-text-primary);
+}
+
+.criteria-lead {
+    font-size: 1.15rem;
+    color: var(--c-text-secondary);
+    max-width: 860px;
+    line-height: 1.75;
+}
+
+/* ── Telemetry & Statistics Banner (OPEN, NO CONTAINERING) ── */
+.stats-banner-card {
+    background: transparent;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .stats-banner-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .stats-banner-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.stat-val-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+}
+
+.stat-number {
+    font-family: var(--font-mono);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--c-blue-600);
+}
+
+.stat-number.green {
+    color: var(--c-green-600);
+}
+
+.stat-unit {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--c-text-muted);
+}
+
+.stat-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--c-text-primary);
+}
+
+.stat-subtext {
+    font-size: 0.82rem;
+    color: var(--c-text-muted);
+    line-height: 1.5;
+}
+
+/* ── Interactive Bio-Quota Simulator (OPEN, UNBOXED) ── */
+.simulator-section {
+    padding-top: 1rem;
+}
+
+.simulator-card {
+    background: transparent;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 2rem;
+}
+
+.simulator-header {
+    background: transparent;
+    color: var(--c-text-primary);
+    padding: 0 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.sim-title-group h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--c-text-primary);
+}
+
+.sim-title-group p {
+    color: var(--c-text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.simulator-body-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+@media (max-width: 900px) {
+    .simulator-body-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.slider-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.slider-control-card {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.slider-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-label {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--c-text-primary);
+}
+
+.slider-value-pill {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--c-blue-600);
+}
+
+.custom-range-input {
+    width: 100%;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: var(--radius-pill);
+    outline: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.custom-range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--c-blue-600);
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.slider-sub-hint {
+    font-size: 0.78rem;
+    color: var(--c-text-muted);
+}
+
+/* Simulator Output Panel (Unboxed) */
+.simulator-results-panel {
+    background: transparent;
+    border: none;
+    border-left: 1px solid #e2e8f0;
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .simulator-results-panel {
+        border-left: none;
+        border-top: 1px solid #e2e8f0;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+}
+
+.score-main-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.score-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--c-text-muted);
+}
+
+.score-large-number {
+    font-family: var(--font-mono);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--c-text-primary);
+    line-height: 1.1;
+}
+
+.meter-track {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.meter-fill {
+    height: 100%;
+    width: 85%;
+    background: var(--c-blue-600);
+    transition: width 0.3s ease;
+}
+
+.status-callout-block {
+    background: #f8fafc;
+    border-radius: 4px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.status-callout-block h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.status-callout-block p {
+    font-size: 0.92rem;
+    color: var(--c-text-secondary);
+    line-height: 1.65;
+}
+
+.sim-ethical-footnote {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.85rem;
+    font-size: 0.82rem;
+    color: var(--c-text-muted);
+    line-height: 1.6;
+}
+
+/* ── Criteria Deep-Dive Layout (OPEN TWO-COLUMN EDITORIAL, NO SIDE COLOR PANELS) ── */
+.criteria-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 840px) {
+    .criteria-card-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+.criterion-card {
+    background: transparent;
+    border: none !important;
+    border-left: none !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.criterion-card-header {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.criterion-card-header h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--c-text-primary);
+}
+
+.criterion-content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.criterion-content-body p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--c-text-secondary);
+}
+
+.criterion-feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.criterion-feature-list li {
+    font-size: 0.92rem;
+    color: var(--c-text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.criterion-feature-list li strong {
+    color: var(--c-text-primary);
+}
+
+/* ── Cross-Section Elevation Graphic Card (OPEN) ── */
+.elevation-profile-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.elevation-diagram-svg {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    background: #f8fafc;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+.elevation-legend-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 820px) {
+    .elevation-legend-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.legend-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.legend-card h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--c-text-primary);
+}
+
+.legend-card p {
+    font-size: 0.85rem;
+    color: var(--c-text-muted);
+    line-height: 1.5;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Postcard | Postcard from 2055 — HUME 100</title>
+    <meta name="description" content="An academic speculative digital artifact exploring the 2055 biophilic transformation of Los Baños, Laguna through the lens of Human Ecology.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Universal Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="letter.html" class="header-brand">HUME100-2055-LB</a>
+
+            <nav class="main-nav">
+                <a href="letter.html" class="nav-link">Letter to 2025</a>
+                <a href="index.html" class="nav-link active">Archive</a>
+                <a href="criteria.html" class="nav-link">Criteria</a>
+                <a href="framework.html" class="nav-link">Framework</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-meta-row">
+                <span class="badge">Speculative Postcard Archive</span>
+                <span class="badge">UPLB Human Ecology Submission</span>
+            </div>
+
+            <h1 class="hero-title">
+                Los Baños, Laguna 2055
+            </h1>
+
+            <p class="hero-subtitle">
+                An interactive postcard recovered from the mid-21st century. Explore how Los Baños transformed into an interconnected, vertical eco-city where human shelter and Mount Makiling's forest corridors coexist as one living system.
+            </p>
+        </section>
+
+        <!-- 3D Interactive Postcard Console -->
+        <section class="postcard-console-wrapper">
+            <div class="console-header-bar">
+                <div class="console-left">
+                    <span>ARCHIVE DISPATCH #2055-LB</span>
+                </div>
+                <!-- 3 Clear Dispatches -->
+                <div class="dispatch-tab-group">
+                    <button class="dispatch-tab-btn active" data-dispatch="official">Dispatch 01: Council Report</button>
+                    <button class="dispatch-tab-btn" data-dispatch="personal">Dispatch 02: Citizen Letter</button>
+                    <button class="dispatch-tab-btn" data-dispatch="ranger">Dispatch 03: Forest Ranger</button>
+                </div>
+            </div>
+
+            <div class="console-controls-bar">
+                <span class="card-instruction-text">Click the card or button to flip between the photo and the archival message</span>
+                <button id="flip-btn" class="action-flip-btn">View Archival Message (Back)</button>
+            </div>
+
+            <div class="postcard-stage">
+                <div class="card-3d-wrapper" id="postcard-card">
+                    <div class="card-inner">
+                        <!-- Card Front -->
+                        <div class="card-front">
+                            <div class="postcard-hero-image-wrapper">
+                                <img src="images/hero.jpg" alt="Futuristic Los Baños 2055 Cityscape with Mount Makiling and Vertical Towers">
+                            </div>
+                            <div class="card-front-bar">
+                                <span>LOS BAÑOS, LAGUNA (2055)</span>
+                                <span>MOUNT MAKILING BIOPHILIC CORRIDORS</span>
+                                <span>UPLB ARCHIVAL RECORD</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Back -->
+                        <div class="card-back">
+                            <div class="card-back-header">
+                                <span id="msg-tag" class="msg-tag">DISPATCH 01 // MUNICIPAL COUNCIL ARCHIVE</span>
+                                <span id="msg-date">SEPTEMBER 11, 2055</span>
+                            </div>
+
+                            <div class="card-back-grid">
+                                <div class="message-pane">
+                                    <h3 id="msg-salutation" class="msg-salutation">Dearest Earth Citizen,</h3>
+                                    <div id="msg-body-paragraphs" class="msg-body">
+                                        <p class="message-paragraph">
+                                            By 2055, Los Baños has transformed into a vertical, biophilic eco-city where compact urban hubs are closely integrated with restored Makiling forest corridors, yet resource sharing remains an active daily commitment for its residents.
+                                        </p>
+                                        <p class="message-paragraph">
+                                            From the high-rise terraces of Sector 4, the separation between human shelter and wild nature has disappeared. Our buildings are constructed with self-healing bio-concrete that repairs its own fractures naturally, while vertical gardens feed and cool every neighborhood.
+                                        </p>
+                                        <p class="message-paragraph">
+                                            Laguna de Bay gleams below—restored from decades of pollution by community-managed wetland reed filters. We invite you to see what human ecology can achieve when technology is guided by community values and environmental care.
+                                        </p>
+                                    </div>
+                                    <span id="msg-signature" class="msg-signature">— Sector 4 Resident Council, Los Baños</span>
+                                </div>
+
+                                <div class="postal-pane">
+                                    <div class="stamp-row">
+                                        <div class="postage-stamp">
+                                            <span class="stamp-denomination">2055</span>
+                                            <span class="stamp-label">MAKILING BIOME</span>
+                                            <span class="stamp-label">BIO-CREDIT</span>
+                                        </div>
+                                        <div class="circular-postmark">
+                                            <span>UPLB POST</span>
+                                            <strong>11.09.55</strong>
+                                            <span>SECTOR 04</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="address-lines">
+                                        <div class="addr-field">
+                                            <span class="addr-label">RECIPIENT:</span>
+                                            <span id="meta-recipient" class="addr-value">Human Ecology Archives, UPLB</span>
+                                        </div>
+                                        <div class="addr-field">
+                                            <span class="addr-label">LOCATION ZONE:</span>
+                                            <span id="meta-zone" class="addr-value">Laguna Sector 04 • Makiling Shoreline Arc</span>
+                                        </div>
+                                        <div class="addr-field">
+                                            <span class="addr-label">ARCHIVAL CLASSIFICATION:</span>
+                                            <span id="meta-classification" class="addr-value">Public Archival Record #2055-LB-0911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Evidence Archive (Clean, simple, non-redundant) -->
+        <section class="archive-gallery-section">
+            <div class="section-header-block">
+                <span class="section-tag">Photographic Evidence</span>
+                <h2 class="section-main-title">Three Core Pillars of the 2055 Transformation</h2>
+                <p class="section-description">
+                    How green engineering, community living, and natural lake restoration work together.
+                </p>
+            </div>
+
+            <div class="archive-gallery-grid">
+                <div class="archive-card">
+                    <div class="archive-card-media">
+                        <img src="images/bio_concrete.jpg" alt="Bio-concrete infrastructure with bacterial spores">
+                        <span class="archive-tag">ENGINEERED INFRASTRUCTURE</span>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4>Self-Healing Bio-Concrete</h4>
+                        <p>
+                            High-rise towers poured with concrete containing natural, harmless bacteria. When tiny cracks appear, moisture activates the bacteria to seal fractures with natural limestone, keeping buildings durable for generations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-card-media">
+                        <img src="images/eco_community.jpg" alt="Eco-community gathering on elevated breezeway">
+                        <span class="archive-tag">COMMUNITY LIVING</span>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4>Canopy Breezeways</h4>
+                        <p>
+                            Shaded open-air communal terraces connecting high-rise residential towers. Residents meet weekly to share harvests from balcony gardens and democratically allocate daily water and power quotas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-card-media">
+                        <img src="images/laguna_de_bay.jpg" alt="Revitalized Laguna de Bay shoreline wetlands">
+                        <span class="archive-tag">NATURAL RESTORATION</span>
+                    </div>
+                    <div class="archive-card-body">
+                        <h4>Restored Laguna de Bay</h4>
+                        <p>
+                            A de-polluted lake ringed with a 300-meter buffer of native wetland reeds. Runoff water is naturally filtered before reaching the lake, providing safe waters for sustainable community fish farms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Academic Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>HUME 100: Future Postcard from 2055</h4>
+                <p>
+                    A speculative digital artifact submitted in partial fulfillment of the requirements for HUME 100 (Introduction to Human Ecology). Demonstrating the interdependence of human institutions and bioclimatic limits in Los Baños, Laguna.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Academic Registry</h4>
+                <ul class="footer-meta-list">
+                    <li><span>Institution:</span> <strong>UPLB</strong></li>
+                    <li><span>College:</span> <strong>Human Ecology (CHE)</strong></li>
+                    <li><span>Course Code:</span> <strong>HUME 100</strong></li>
+                    <li><span>Horizon Year:</span> <strong>2055 CE</strong></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore Archive</h4>
+                <ul class="footer-meta-list">
+                    <li><a href="letter.html">Letter to 2025</a></li>
+                    <li><a href="index.html">01. Archive Dispatch</a></li>
+                    <li><a href="criteria.html">02. Ecosystem Criteria</a></li>
+                    <li><a href="framework.html">03. Theoretical Framework</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <span>2055 Human Ecology Project • Los Baños, Laguna</span>
+            <span>UPLB Bioregional Research Taskforce</span>
+        </div>
+    </footer>
+
+    <!-- Standalone Non-Module JS Script (Works on file:/// URLs) -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem Criteria Specifications | Postcard from 2055 — HUME 100</title>
+    <meta name="description" content="Specifications of Los Baños 2055 — explaining quality of life, green technology, natural restoration, and daily resource sharing in clear terms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Universal Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="letter.html" class="header-brand">HUME100-2055-LB</a>
+
+            <nav class="main-nav">
+                <a href="letter.html" class="nav-link">Letter to 2025</a>
+                <a href="index.html" class="nav-link">Archive</a>
+                <a href="criteria.html" class="nav-link active">Criteria</a>
+                <a href="framework.html" class="nav-link">Framework</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="criteria-header">
+            <div class="hero-meta-row">
+                <span class="badge">HUME 100 Criteria Review</span>
+                <span class="badge">Ecosystem & Community Metrics</span>
+            </div>
+
+            <h1 class="criteria-title">
+                How Los Baños Functions in 2055
+            </h1>
+
+            <p class="criteria-lead">
+                An easy-to-understand breakdown of our town's daily life. Learn how we maintain clean air and long lives, how our buildings work with nature, and how we share water and energy fairly.
+            </p>
+        </section>
+
+        <!-- 4 Key Numbers Banner -->
+        <section class="stats-banner-card">
+            <div class="stat-item">
+                <div class="stat-val-row">
+                    <span class="stat-number" data-count="98">98</span>
+                    <span class="stat-unit">%</span>
+                </div>
+                <h4 class="stat-title">Clean Power</h4>
+                <p class="stat-subtext">All electricity comes from natural underground heat and solar windows.</p>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-val-row">
+                    <span class="stat-number green" data-count="92">92</span>
+                    <span class="stat-unit">YRS</span>
+                </div>
+                <h4 class="stat-title">Average Lifespan</h4>
+                <p class="stat-subtext">No smoke or exhaust, plus daily walking on shaded high-rise bridges.</p>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-val-row">
+                    <span class="stat-number" data-count="12">12</span>
+                    <span class="stat-unit">M</span>
+                </div>
+                <h4 class="stat-title">Trees Replanted</h4>
+                <p class="stat-subtext">Native trees connect Mount Makiling all the way to the lakeshore.</p>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-val-row">
+                    <span class="stat-number green" data-count="0" data-display="0.0">0.0</span>
+                    <span class="stat-unit">AQI</span>
+                </div>
+                <h4 class="stat-title">Pollution Days</h4>
+                <p class="stat-subtext">Zero gas cars or factories in the municipality since 2038.</p>
+            </div>
+        </section>
+
+        <!-- Interactive Household Bio-Quota Simulator -->
+        <section class="simulator-section">
+            <div class="section-header-block">
+                <span class="section-tag">Interactive Simulation</span>
+                <h2 class="section-main-title">Daily Resource Sharing Calculator</h2>
+                <p class="section-description">
+                    In 2055, every family has a fair daily limit on water and power to protect the lake and mountain. Move the sliders below to see how a household balances its daily allowance!
+                </p>
+            </div>
+
+            <div class="simulator-card">
+                <div class="simulator-header">
+                    <div class="sim-title-group">
+                        <h3>Sector 4 Daily Household Calculator</h3>
+                        <p>Adjust the sliders to test your daily resource footprint</p>
+                    </div>
+                    <span class="badge">EASY SIMULATOR</span>
+                </div>
+
+                <div class="simulator-body-grid">
+                    <!-- Controls -->
+                    <div class="slider-group">
+                        <!-- Water -->
+                        <div class="slider-control-card">
+                            <div class="slider-meta-row">
+                                <span class="slider-label">Daily Tap Water (Liters per person):</span>
+                                <span id="val-water" class="slider-value-pill">65 L</span>
+                            </div>
+                            <input type="range" id="slider-water" class="custom-range-input" min="30" max="150" step="5" value="65">
+                            <span class="slider-sub-hint">Standard quota: 65 Liters/day (Enough for drinking, cooking, and mist showers)</span>
+                        </div>
+
+                        <!-- Power -->
+                        <div class="slider-control-card">
+                            <div class="slider-meta-row">
+                                <span class="slider-label">Daily Electricity (kWh per person):</span>
+                                <span id="val-power" class="slider-value-pill">3.8 kWh</span>
+                            </div>
+                            <input type="range" id="slider-power" class="custom-range-input" min="1.0" max="10.0" step="0.2" value="3.8">
+                            <span class="slider-sub-hint">Standard quota: 3.8 kWh/day (Lights, cooking, and personal devices)</span>
+                        </div>
+
+                        <!-- Transit -->
+                        <div class="slider-control-card">
+                            <div class="slider-meta-row">
+                                <span class="slider-label">Daily Skyway Pod Travel:</span>
+                                <span id="val-transit" class="slider-value-pill">14 km</span>
+                            </div>
+                            <input type="range" id="slider-transit" class="custom-range-input" min="2" max="40" step="2" value="14">
+                            <span class="slider-sub-hint">Standard quota: 14 km/day (Clean electric transit across town)</span>
+                        </div>
+                    </div>
+
+                    <!-- Output Panel -->
+                    <div class="simulator-results-panel">
+                        <div class="score-main-block">
+                            <div class="score-label-row">
+                                <span>COMMUNITY BALANCE SCORE:</span>
+                                <span id="quota-status-badge" class="badge">STATUS: BALANCED</span>
+                            </div>
+                            <div id="quota-score-display" class="score-large-number">85/100</div>
+                            <div class="meter-track">
+                                <div id="quota-meter-fill" class="meter-fill"></div>
+                            </div>
+                        </div>
+
+                        <div class="status-callout-block">
+                            <h4 id="quota-status-title">Fair and Balanced</h4>
+                            <p id="quota-status-desc">
+                                Your family is using exactly what nature can regenerate today. No penalties, and any extra water you save is shared with elderly neighbors in your building.
+                            </p>
+                        </div>
+
+                        <div class="sim-ethical-footnote">
+                            <strong>Why We Do This:</strong> In 2055, we learned that clean water and power are not commodities you buy with endless money. They belong to everyone, so we share them carefully.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Criterion 1: Quality of Life -->
+        <section class="criterion-section">
+            <div class="section-header-block">
+                <span class="section-tag">Requirement 01</span>
+                <h2 class="section-main-title">Quality of Life: Good Health and Shared Limits</h2>
+                <p class="section-description">
+                    Life in 2055 has two main sides: our bodies are healthier than ever, but we also live with strict rules on how much we can consume.
+                </p>
+            </div>
+
+            <div class="criteria-card-grid">
+                <!-- Thriving Public Health -->
+                <div class="criterion-card">
+                    <div class="criterion-card-header">
+                        <h3>Great Public Health & Long Lives</h3>
+                        <span class="badge">HEALTH</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            Because there are no gas cars, trucks, or factory smoke, the air in Los Baños smells like mountain rain. Kids no longer suffer from asthma, and grandparents regularly live past 90 years old.
+                        </p>
+                        <p>
+                            People walk everywhere along beautiful, shaded bridges connecting high-rise towers. Tower balconies are covered in sweet potato vines and tomatoes, giving families fresh food every day.
+                        </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Clean Mountain Air:</strong> Cool breezes from Mount Makiling keep the town naturally fresh.</li>
+                            <li><strong>Cooling Domes:</strong> When severe heatwaves hit, public misting zones keep everyone safe from heat exhaustion.</li>
+                            <li><strong>Fresh Tower Produce:</strong> Every apartment building has community gardens growing fresh vegetables.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Community Resource Stewardship -->
+                <div class="criterion-card green">
+                    <div class="criterion-card-header">
+                        <h3>Fair Sharing & Community Stewardship</h3>
+                        <span class="badge">SHARED RULES</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            To make sure the town never runs dry, every neighborhood shares a daily water and clean power budget based on seasonal rainfall and solar generation.
+                        </p>
+                        <p>
+                            Rather than letting wealthy individuals hoard resources while others suffer cuts, our community model ensures that clean drinking water, cooling, and electricity are guaranteed to every resident.
+                        </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Daily Home Budget:</strong> Simple home displays help families see their daily use and avoid waste.</li>
+                            <li><strong>Community Sharing Pool:</strong> Unused daily credits are pooled to support families with newborn babies and elderly relatives.</li>
+                            <li><strong>Weekly Assemblies:</strong> Neighbors meet regularly to discuss rules, solve issues, and plan seasonal planting.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Criterion 2: Natural vs Engineered -->
+        <section class="criterion-section">
+            <div class="section-header-block">
+                <span class="section-tag">Requirement 02</span>
+                <h2 class="section-main-title">Environment: Green Engineering & Restored Nature</h2>
+                <p class="section-description">
+                    Our technology does not destroy nature—it copies how nature heals itself.
+                </p>
+            </div>
+
+            <div class="criteria-card-grid">
+                <!-- Engineered Infrastructure -->
+                <div class="criterion-card">
+                    <div class="criterion-card-header">
+                        <h3>Smart Green Engineering</h3>
+                        <span class="badge">SMART BUILDINGS</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            <strong>Self-Healing Concrete:</strong> Our high-rise towers are built with concrete containing harmless natural bacteria. When rain gets into a small crack, the bacteria wake up, create limestone, and seal the crack by themselves.
+                        </p>
+                        <p>
+                            <strong>Underground Geothermal Power:</strong> We tap the natural heat deep inside Mount Makiling. This gives our town continuous, clean electricity that never goes out—even during heavy storms.
+                        </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Carbon-Absorbing Walls:</strong> Building walls absorb greenhouse gases from the air.</li>
+                            <li><strong>Storm-Proof Power:</strong> Underground power lines are safe from typhoon winds.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Natural Ecosystem Restoration -->
+                <div class="criterion-card green">
+                    <div class="criterion-card-header">
+                        <h3>Restoring the Mountain & Lake</h3>
+                        <span class="badge">HEALTHY NATURE</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            <strong>A Clean Laguna de Bay:</strong> The lake is no longer polluted. A 300-meter border of green wetland reeds and freshwater clams cleans all water naturally before it enters the lake.
+                        </p>
+                        <p>
+                            <strong>Mount Makiling Forest:</strong> Over 12 million native trees were replanted. Skybridges let birds, monkeys, and deer travel freely between the mountain and the lake.
+                        </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Natural Water Filters:</strong> Reeds and plants clean town runoff naturally without harsh chemicals.</li>
+                            <li><strong>Canopy Skybridges:</strong> High bridges allow animals to cross safely over roads and walkways.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple Elevation Profile Diagram -->
+        <section class="elevation-section">
+            <div class="section-header-block">
+                <span class="section-tag">Town Layout</span>
+                <h2 class="section-main-title">From the Mountain to the Lake</h2>
+                <p class="section-description">
+                    See how Los Baños connects from the top of Mount Makiling down to the shores of Laguna de Bay in one continuous green line.
+                </p>
+            </div>
+
+            <div class="elevation-profile-card">
+                <svg class="elevation-diagram-svg" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="50" y1="40" x2="850" y2="40" stroke="#cbd5e1" stroke-dasharray="4 4"/>
+                    <line x1="50" y1="100" x2="850" y2="100" stroke="#cbd5e1" stroke-dasharray="4 4"/>
+                    <line x1="50" y1="160" x2="850" y2="160" stroke="#cbd5e1" stroke-dasharray="4 4"/>
+                    <line x1="50" y1="210" x2="850" y2="210" stroke="#94a3b8" stroke-width="2"/>
+
+                    <path d="M50 45 C150 50, 240 90, 360 125 C480 155, 620 185, 750 205 L850 210 L850 240 L50 240 Z" fill="#e2e8f0" opacity="0.4"/>
+                    <path d="M50 45 C150 50, 240 90, 360 125 C480 155, 620 185, 750 205 L850 210" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+
+                    <circle cx="120" cy="55" r="5" fill="#16a34a"/>
+                    <text x="120" y="32" fill="#16a34a" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">MT. MAKILING (1,090M)</text>
+                    <text x="120" y="80" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Protected Cloud Forest</text>
+
+                    <circle cx="320" cy="115" r="5" fill="#2563eb"/>
+                    <text x="320" y="95" fill="#2563eb" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">UPLB CAMPUS (280M)</text>
+                    <text x="320" y="140" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Student Labs & Green Towers</text>
+
+                    <circle cx="560" cy="170" r="5" fill="#0284c7"/>
+                    <text x="560" y="150" fill="#0284c7" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">TOWN CENTER (45M)</text>
+                    <text x="560" y="195" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Vertical Living Towers</text>
+
+                    <circle cx="780" cy="208" r="5" fill="#059669"/>
+                    <text x="780" y="185" fill="#059669" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">LAGUNA DE BAY (2M)</text>
+                    <text x="780" y="230" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Clean Lake & Fish Cooperatives</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Criterion 3: Community & Bayanihan -->
+        <section class="criterion-section">
+            <div class="section-header-block">
+                <span class="section-tag">Requirement 03</span>
+                <h2 class="section-main-title">Community: Bayanihan and Fair Voice</h2>
+                <p class="section-description">
+                    How traditional Filipino values of helping neighbors (Bayanihan) keep our town fair and strong.
+                </p>
+            </div>
+
+            <div class="criteria-card-grid">
+                <div class="criterion-card">
+                    <div class="criterion-card-header">
+                        <h3>Bayanihan Sharing Pools</h3>
+                        <span class="badge">HELPING NEIGHBORS</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            Every apartment building has a community pool where families donate extra water or power credits they didn't use. If an elderly neighbor or a newborn baby needs extra water, it comes directly from this shared pool.
+                        </p>
+                        <p>
+                            Residents take turns cleaning vertical gardens and maintaining solar panels together on weekends, building strong friendships across generations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="criterion-card green">
+                    <div class="criterion-card-header">
+                        <h3>Youth Having a Real Voice</h3>
+                        <span class="badge">FUTURE GENERATIONS</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            Young residents aged 16 to 25 have a permanent seat on the town council. They hold veto power on any construction project that takes more than 10 years to build.
+                        </p>
+                        <p>
+                            This guarantees that older leaders cannot make decisions that damage the environment for the children who will inherit the town.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Academic Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>HUME 100: Future Postcard from 2055</h4>
+                <p>
+                    A speculative digital artifact submitted in partial fulfillment of the requirements for HUME 100 (Introduction to Human Ecology). Demonstrating the interdependence of human institutions and bioclimatic limits in Los Baños, Laguna.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Academic Registry</h4>
+                <ul class="footer-meta-list">
+                    <li><span>Institution:</span> <strong>UPLB</strong></li>
+                    <li><span>College:</span> <strong>Human Ecology (CHE)</strong></li>
+                    <li><span>Course Code:</span> <strong>HUME 100</strong></li>
+                    <li><span>Horizon Year:</span> <strong>2055 CE</strong></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore Archive</h4>
+                <ul class="footer-meta-list">
+                    <li><a href="letter.html">Letter to 2025</a></li>
+                    <li><a href="index.html">01. Archive Dispatch</a></li>
+                    <li><a href="criteria.html">02. Ecosystem Criteria</a></li>
+                    <li><a href="framework.html">03. Theoretical Framework</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <span>2055 Human Ecology Project • Los Baños, Laguna</span>
+            <span>UPLB Bioregional Research Taskforce</span>
+        </div>
+    </footer>
+
+    <!-- Standalone Non-Module JS Script (Works on file:/// URLs) -->
+    <script src="js/app.js"></script>
+</body>
+</html>
