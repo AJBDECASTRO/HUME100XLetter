@@ -73,11 +73,3 @@ hr {
     letter-spacing: 0.08em;
     color: var(--c-text-muted) !important;
 }
-
-/* No side color panels anywhere */
-* {
-    border-left-color: transparent !important;
-}
-.border-left-none {
-    border-left: none !important;
-}

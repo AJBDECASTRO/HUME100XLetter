@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Real-Time Telemetry Bar -->
+    <div class="telemetry-ticker">
+        <div class="ticker-item">
+            <span>STATION: <strong>LB-CENTRAL (14.1706 N, 121.2433 E)</strong></span>
+        </div>
+        <div class="ticker-item">
+            <span>CANOPY HUMIDITY: <strong class="ticker-val">88.4%</strong></span>
+        </div>
+        <div class="ticker-item">
+            <span>LAGUNA LAKE: <strong class="ticker-val green">CLEAN & RESTORED</strong></span>
+        </div>
+        <div class="ticker-item">
+            <span>CLEAN ENERGY: <strong class="ticker-val">100% SOLAR & GEOTHERMAL</strong></span>
+        </div>
+    </div>
+
     <!-- Universal Header -->
     <header class="main-header">
         <div class="header-container">
@@ -162,114 +178,6 @@
             </div>
         </section>
 
-        <!-- Criterion 1: Quality of Life -->
-        <section class="criterion-section">
-            <div class="section-header-block">
-                <span class="section-tag">Requirement 01</span>
-                <h2 class="section-main-title">Quality of Life: Good Health and Shared Limits</h2>
-                <p class="section-description">
-                    Life in 2055 has two main sides: our bodies are healthier than ever, but we also live with strict rules on how much we can consume.
-                </p>
-            </div>
-
-            <div class="criteria-card-grid">
-                <!-- Thriving Public Health -->
-                <div class="criterion-card">
-                    <div class="criterion-card-header">
-                        <h3>Great Public Health & Long Lives</h3>
-                        <span class="badge">HEALTH</span>
-                    </div>
-                    <div class="criterion-content-body">
-                        <p>
-                            Because there are no gas cars, trucks, or factory smoke, the air in Los Baños smells like mountain rain. Kids no longer suffer from asthma, and grandparents regularly live past 90 years old.
-                        </p>
-                        <p>
-                            People walk everywhere along beautiful, shaded bridges connecting high-rise towers. Tower balconies are covered in sweet potato vines and tomatoes, giving families fresh food every day.
-                        </p>
-                        <ul class="criterion-feature-list">
-                            <li><strong>Clean Mountain Air:</strong> Cool breezes from Mount Makiling keep the town naturally fresh.</li>
-                            <li><strong>Cooling Domes:</strong> When severe heatwaves hit, public misting zones keep everyone safe from heat exhaustion.</li>
-                            <li><strong>Fresh Tower Produce:</strong> Every apartment building has community gardens growing fresh vegetables.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Community Resource Stewardship -->
-                <div class="criterion-card green">
-                    <div class="criterion-card-header">
-                        <h3>Fair Sharing & Community Stewardship</h3>
-                        <span class="badge">SHARED RULES</span>
-                    </div>
-                    <div class="criterion-content-body">
-                        <p>
-                            To make sure the town never runs dry, every neighborhood shares a daily water and clean power budget based on seasonal rainfall and solar generation.
-                        </p>
-                        <p>
-                            Rather than letting wealthy individuals hoard resources while others suffer cuts, our community model ensures that clean drinking water, cooling, and electricity are guaranteed to every resident.
-                        </p>
-                        <ul class="criterion-feature-list">
-                            <li><strong>Daily Home Budget:</strong> Simple home displays help families see their daily use and avoid waste.</li>
-                            <li><strong>Community Sharing Pool:</strong> Unused daily credits are pooled to support families with newborn babies and elderly relatives.</li>
-                            <li><strong>Weekly Assemblies:</strong> Neighbors meet regularly to discuss rules, solve issues, and plan seasonal planting.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Criterion 2: Natural vs Engineered -->
-        <section class="criterion-section">
-            <div class="section-header-block">
-                <span class="section-tag">Requirement 02</span>
-                <h2 class="section-main-title">Environment: Green Engineering & Restored Nature</h2>
-                <p class="section-description">
-                    Our technology does not destroy nature—it copies how nature heals itself.
-                </p>
-            </div>
-
-            <div class="criteria-card-grid">
-                <!-- Engineered Infrastructure -->
-                <div class="criterion-card">
-                    <div class="criterion-card-header">
-                        <h3>Smart Green Engineering</h3>
-                        <span class="badge">SMART BUILDINGS</span>
-                    </div>
-                    <div class="criterion-content-body">
-                        <p>
-                            <strong>Self-Healing Concrete:</strong> Our high-rise towers are built with concrete containing harmless natural bacteria. When rain gets into a small crack, the bacteria wake up, create limestone, and seal the crack by themselves.
-                        </p>
-                        <p>
-                            <strong>Underground Geothermal Power:</strong> We tap the natural heat deep inside Mount Makiling. This gives our town continuous, clean electricity that never goes out—even during heavy storms.
-                        </p>
-                        <ul class="criterion-feature-list">
-                            <li><strong>Carbon-Absorbing Walls:</strong> Building walls absorb greenhouse gases from the air.</li>
-                            <li><strong>Storm-Proof Power:</strong> Underground power lines are safe from typhoon winds.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Natural Ecosystem Restoration -->
-                <div class="criterion-card green">
-                    <div class="criterion-card-header">
-                        <h3>Restoring the Mountain & Lake</h3>
-                        <span class="badge">HEALTHY NATURE</span>
-                    </div>
-                    <div class="criterion-content-body">
-                        <p>
-                            <strong>A Clean Laguna de Bay:</strong> The lake is no longer polluted. A 300-meter border of green wetland reeds and freshwater clams cleans all water naturally before it enters the lake.
-                        </p>
-                        <p>
-                            <strong>Mount Makiling Forest:</strong> Over 12 million native trees were replanted. Skybridges let birds, monkeys, and deer travel freely between the mountain and the lake.
-                        </p>
-                        <ul class="criterion-feature-list">
-                            <li><strong>Natural Water Filters:</strong> Reeds and plants clean town runoff naturally without harsh chemicals.</li>
-                            <li><strong>Canopy Skybridges:</strong> High bridges allow animals to cross safely over roads and walkways.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Simple Elevation Profile Diagram -->
         <section class="elevation-section">
             <div class="section-header-block">
@@ -309,44 +217,86 @@
             </div>
         </section>
 
-        <!-- Criterion 3: Community & Bayanihan -->
+        <!-- Core Living System Standards (One Unified Criteria Section) -->
         <section class="criterion-section">
             <div class="section-header-block">
-                <span class="section-tag">Requirement 03</span>
-                <h2 class="section-main-title">Community: Bayanihan and Fair Voice</h2>
+                <span class="section-tag">Living Standards</span>
+                <h2 class="section-main-title">Core Ecosystem Criteria for 2055</h2>
                 <p class="section-description">
-                    How traditional Filipino values of helping neighbors (Bayanihan) keep our town fair and strong.
+                    How Los Baños balances public health, regenerative green engineering, natural restoration, and community equity as one living system.
                 </p>
             </div>
 
             <div class="criteria-card-grid">
+                <!-- Public Health & Quality of Life -->
                 <div class="criterion-card">
                     <div class="criterion-card-header">
-                        <h3>Bayanihan Sharing Pools</h3>
-                        <span class="badge">HELPING NEIGHBORS</span>
+                        <h3>Public Health & Clean Air</h3>
+                        <span class="badge">HEALTH</span>
                     </div>
                     <div class="criterion-content-body">
                         <p>
-                            Every apartment building has a community pool where families donate extra water or power credits they didn't use. If an elderly neighbor or a newborn baby needs extra water, it comes directly from this shared pool.
+                            Without automotive smoke or factory exhaust, the air in Los Baños is clean and healthy. Mountain breezes cool our towers, and shaded high-rise breezeways encourage daily walking and neighborly connection.
                         </p>
-                        <p>
-                            Residents take turns cleaning vertical gardens and maintaining solar panels together on weekends, building strong friendships across generations.
-                        </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Fresh Mountain Air:</strong> Natural air currents from Mount Makiling circulate freely through open-air towers.</li>
+                            <li><strong>Balcony Gardens:</strong> Community gardens on residential balconies produce fresh vegetables for families every day.</li>
+                            <li><strong>Cooling Breezeways:</strong> Public shaded mist corridors protect citizens during peak midday heat.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="criterion-card green">
+                <!-- Green Engineered Infrastructure -->
+                <div class="criterion-card">
                     <div class="criterion-card-header">
-                        <h3>Youth Having a Real Voice</h3>
-                        <span class="badge">FUTURE GENERATIONS</span>
+                        <h3>Smart Green Engineering</h3>
+                        <span class="badge">INFRASTRUCTURE</span>
                     </div>
                     <div class="criterion-content-body">
                         <p>
-                            Young residents aged 16 to 25 have a permanent seat on the town council. They hold veto power on any construction project that takes more than 10 years to build.
+                            High-rise spires are constructed with self-healing bio-concrete containing natural limestone-producing bacteria. When moisture enters tiny cracks, bacteria activate to seal fractures naturally.
                         </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Self-Healing Concrete:</strong> High-rise towers heal their own structural stress cracks without toxic chemicals.</li>
+                            <li><strong>Geothermal Baselines:</strong> Clean geothermal heat from Mount Makiling supplies continuous power even during storms.</li>
+                            <li><strong>Carbon-Capturing Walls:</strong> Building facades absorb ambient CO2 from the surrounding atmosphere.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Natural Ecosystem Restoration -->
+                <div class="criterion-card">
+                    <div class="criterion-card-header">
+                        <h3>Restored Natural Commons</h3>
+                        <span class="badge">RESTORATION</span>
+                    </div>
+                    <div class="criterion-content-body">
                         <p>
-                            This guarantees that older leaders cannot make decisions that damage the environment for the children who will inherit the town.
+                            Over 12 million native trees were replanted to reconnect Mount Makiling down to Laguna de Bay. A 300-meter ring of wetland reeds filters all urban runoff before it reaches the lake.
                         </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Natural Wetland Reeds:</strong> Bio-filtering reeds cleanse municipal water naturally, reviving fish populations.</li>
+                            <li><strong>Wildlife Skybridges:</strong> Elevated green bridges allow deer, birds, and forest fauna to migrate safely across town.</li>
+                            <li><strong>Protected Watershed:</strong> Zero-deforestation zones protect our fresh water supply for future generations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Community Bayanihan & Equity -->
+                <div class="criterion-card">
+                    <div class="criterion-card-header">
+                        <h3>Community Bayanihan & Equity</h3>
+                        <span class="badge">BAYANIHAN</span>
+                    </div>
+                    <div class="criterion-content-body">
+                        <p>
+                            Fair resource sharing ensures no family goes without clean water or power. Neighbors pool unused daily allowances to support elderly residents, and youth hold permanent seats in municipal decisions.
+                        </p>
+                        <ul class="criterion-feature-list">
+                            <li><strong>Resource Sharing Pools:</strong> Extra daily water and power credits are shared with households in need.</li>
+                            <li><strong>Youth Veto Power:</strong> Delegates aged 16–25 hold veto authority over long-term construction projects.</li>
+                            <li><strong>Weekly Assemblies:</strong> Community decisions are made collaboratively through open consensus.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
