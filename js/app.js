@@ -166,7 +166,7 @@
                 postcardCard.classList.toggle('flipped');
                 if (flipBtn) {
                     const isFlipped = postcardCard.classList.contains('flipped');
-                    flipBtn.innerHTML = isFlipped ? 'View Visual Record (Front)' : 'View Archival Message (Back)';
+                    flipBtn.innerHTML = isFlipped ? 'Flip Postcard to Front (View Photo)' : 'Flip Postcard to Back (Read Message)';
                 }
             }
         }
@@ -307,8 +307,8 @@
             if (valTransit) valTransit.textContent = transit + ' km';
 
             const waterRatio = water / 65;
-            const powerRatio = power / 3.8;
-            const transitRatio = transit / 14;
+            const powerRatio = power / 4.2;
+            const transitRatio = transit / 12;
 
             const compositeIndex = (waterRatio * 0.45) + (powerRatio * 0.35) + (transitRatio * 0.20);
             const scoreOutOf100 = Math.max(10, Math.min(100, Math.round(100 - ((compositeIndex - 1) * 60))));
@@ -324,45 +324,45 @@
                 meterFill.style.width = scoreOutOf100 + '%';
             }
 
-            if (compositeIndex <= 0.85) {
+            if (compositeIndex <= 0.88) {
                 if (meterFill) meterFill.style.background = 'var(--c-green-600)';
                 if (statusBadge) {
                     statusBadge.className = 'badge';
                     statusBadge.textContent = 'STATUS: HIGH CONSERVATION';
                 }
-                if (statusTitle) statusTitle.textContent = 'High Savings and Generosity';
+                if (statusTitle) statusTitle.textContent = 'Conservation & Surplus Buffer';
                 if (statusDesc) {
-                    statusDesc.textContent = 'Your household uses very little water and electricity today. Your extra savings are automatically shared with elderly neighbors and communal balcony gardens.';
+                    statusDesc.textContent = 'Your household operates well within watershed recharge limits. Surplus water and energy reserves bolster communal emergency tanks and support local community nurseries.';
                 }
-            } else if (compositeIndex <= 1.05) {
+            } else if (compositeIndex <= 1.08) {
                 if (meterFill) meterFill.style.background = 'var(--c-blue-600)';
                 if (statusBadge) {
                     statusBadge.className = 'badge';
                     statusBadge.textContent = 'STATUS: BALANCED AND FAIR';
                 }
-                if (statusTitle) statusTitle.textContent = 'Balanced and Fair';
+                if (statusTitle) statusTitle.textContent = 'Balanced with Bioregional Capacity';
                 if (statusDesc) {
-                    statusDesc.textContent = 'Your family is using a healthy, responsible share of town resources. This perfectly matches what Mount Makiling and our solar panels regenerate each day.';
+                    statusDesc.textContent = 'Your family operates in close equilibrium with Makiling watershed recharge rates and solar microgrid output. This supports steady community water pressure and grid stability.';
                 }
-            } else if (compositeIndex <= 1.35) {
+            } else if (compositeIndex <= 1.30) {
                 if (meterFill) meterFill.style.background = '#eab308';
                 if (statusBadge) {
                     statusBadge.className = 'badge';
-                    statusBadge.textContent = 'STATUS: SLIGHTLY HIGH';
+                    statusBadge.textContent = 'STATUS: MODERATE CONSUMPTION';
                 }
-                if (statusTitle) statusTitle.textContent = 'Slightly Above Average';
+                if (statusTitle) statusTitle.textContent = 'Moderate Draw on Reserves';
                 if (statusDesc) {
-                    statusDesc.textContent = 'Your household is using slightly more water or power than average today. Try shortening your shower time so that local storage tanks remain full for tomorrow.';
+                    statusDesc.textContent = 'Your consumption slightly exceeds seasonal replenishment targets. Consider shifting heavy appliance use to peak solar hours or reusing rinse water for domestic plants.';
                 }
             } else {
                 if (meterFill) meterFill.style.background = '#ef4444';
                 if (statusBadge) {
                     statusBadge.className = 'badge';
-                    statusBadge.textContent = 'STATUS: HIGH CONSUMPTION';
+                    statusBadge.textContent = 'STATUS: STRESSED CARRYING CAPACITY';
                 }
-                if (statusTitle) statusTitle.textContent = 'High Resource Use';
+                if (statusTitle) statusTitle.textContent = 'Exceeding Local Carrying Capacity';
                 if (statusDesc) {
-                    statusDesc.textContent = 'Your current usage is putting heavy strain on community reserves. Turn off unused appliances and check taps to help keep our shared supply steady.';
+                    statusDesc.textContent = 'Current consumption draws down municipal aquifer reserves. Adjusting non-essential water and power use helps prevent localized supply curtailments across the barangay.';
                 }
             }
         }
