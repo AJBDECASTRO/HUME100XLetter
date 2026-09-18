@@ -318,8 +318,9 @@
     border-bottom: 1px solid #e2e8f0;
     padding-bottom: 0.75rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
 }
 
 .criterion-card-header h3 {
@@ -338,27 +339,10 @@
     font-size: 0.96rem;
     line-height: 1.7;
     color: var(--c-text-secondary);
+    margin: 0;
 }
 
-.criterion-feature-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    border-top: 1px solid #e2e8f0;
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-}
-
-.criterion-feature-list li {
-    font-size: 0.9rem;
-    color: var(--c-text-secondary);
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-}
-
-.criterion-feature-list li strong {
+.criterion-content-body p strong {
     color: var(--c-text-primary);
 }
 
