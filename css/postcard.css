@@ -702,6 +702,7 @@
     position: absolute;
     top: 0.75rem;
     left: 0.75rem;
+    z-index: 10;
     background: rgba(10, 25, 47, 0.85);
     color: #ffffff;
     font-family: var(--font-mono);

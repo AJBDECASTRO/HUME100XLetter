@@ -11,19 +11,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Real-Time Telemetry Bar -->
+    <!-- Student Information Top Bar -->
     <div class="telemetry-ticker">
         <div class="ticker-item">
-            <span>STATION: <strong>LB-CENTRAL (14.1706 N, 121.2433 E)</strong></span>
+            <span><strong>Andrei Josh B. De Castro</strong></span>
         </div>
         <div class="ticker-item">
-            <span>CANOPY HUMIDITY: <strong class="ticker-val">88.4%</strong></span>
+            <span>Section: <strong>HUME 100 - X</strong></span>
         </div>
         <div class="ticker-item">
-            <span>LAGUNA LAKE: <strong class="ticker-val green">CLEAN & RESTORED</strong></span>
-        </div>
-        <div class="ticker-item">
-            <span>CLEAN ENERGY: <strong class="ticker-val">100% SOLAR & GEOTHERMAL</strong></span>
+            <span>Student Number: <strong>2023-03025</strong></span>
         </div>
     </div>
 
@@ -73,97 +70,160 @@
             </div>
         </section>
 
-        <!-- System Dynamics (Simple Explanation) -->
+        <!-- System Dynamics (Marten Human Ecological Framework) -->
         <section class="dynamics-section">
             <div class="section-header-block">
-                <span class="section-tag">How Everything Connects</span>
-                <h2 class="section-main-title">The Circle of Balance</h2>
+                <span class="section-tag">Theoretical Model</span>
+                <h2 class="section-main-title">The Human Ecological Framework</h2>
                 <p class="section-description">
-                    In Los Baños, every part of our town connects to every other part. What we build affects our forests, and the health of our forests directly determines our quality of life.
+                    Based on the foundational Human Ecology model (Marten, 2001): Human society (the Social System) and the biophysical environment (the Ecosystem) function as two complex adaptive systems linked by reciprocal flows of material, energy, information, human activities, and ecosystem services.
                 </p>
             </div>
 
-            <div class="dynamics-card">
-                <!-- SVG Feedback Loop Diagram -->
-                <div class="dynamics-svg-wrapper">
-                    <svg class="dynamics-svg" viewBox="0 0 760 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M220 80 Q380 30 540 80" stroke="#0284c7" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
-                        <polygon points="545,82 535,74 538,85" fill="#0284c7"/>
+            <!-- Conceptual Diagram Card -->
+            <div class="framework-image-card">
+                <div class="framework-image-wrapper">
+                    <img src="images/framework.png" alt="Human Ecological Framework: Interaction between Social System and Ecosystem">
+                </div>
+                <div class="framework-image-caption">
+                    <strong>Figure 1. The Human Ecosystem Interaction Model</strong> (after Gerald G. Marten, 2001). Demonstrating the continuous reciprocal feedback loop between the Social System (left) and the Natural Ecosystem (right) mediated by human activities and ecosystem services.
+                </div>
+            </div>
 
-                        <path d="M580 140 Q620 200 540 230" stroke="#16a34a" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
-                        <polygon points="535,232 546,236 544,225" fill="#16a34a"/>
+            <!-- The Two Interacting Spheres Grid -->
+            <div class="system-spheres-grid">
+                <!-- Left Sphere: Social System -->
+                <div class="sphere-card">
+                    <div class="sphere-header">
+                        <h3>01. The Social System</h3>
+                        <span class="badge">HUMAN SPHERE</span>
+                    </div>
+                    <p style="font-size: 0.92rem; color: var(--c-text-secondary); line-height: 1.65;">
+                        The organized totality of human population, institutions, culture, and technologies operating within Los Baños. Everything in the Social System is interconnected:
+                    </p>
 
-                        <path d="M480 250 Q380 280 240 230" stroke="#059669" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
-                        <polygon points="235,228 245,236 242,224" fill="#059669"/>
+                    <div class="component-pills">
+                        <span class="component-pill">Knowledge</span>
+                        <span class="component-pill">Technology</span>
+                        <span class="component-pill">Population</span>
+                        <span class="component-pill">Social Organization</span>
+                        <span class="component-pill">Values</span>
+                    </div>
 
-                        <path d="M180 200 Q140 140 200 100" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
-                        <polygon points="204,98 194,94 198,105" fill="#2563eb"/>
-
-                        <circle cx="380" cy="155" r="50" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
-                        <text x="380" y="150" fill="#0a192f" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">LIVING</text>
-                        <text x="380" y="166" fill="#0284c7" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">BALANCE</text>
-
-                        <!-- Node 1 -->
-                        <rect x="100" y="45" width="170" height="70" rx="4" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-                        <text x="185" y="75" fill="#2563eb" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">01. OUR PEOPLE</text>
-                        <text x="185" y="95" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Neighbors & Community</text>
-
-                        <!-- Node 2 -->
-                        <rect x="490" y="45" width="170" height="70" rx="4" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
-                        <text x="575" y="75" fill="#0284c7" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">02. OUR BUILDINGS</text>
-                        <text x="575" y="95" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Green Towers & Clean Energy</text>
-
-                        <!-- Node 3 -->
-                        <rect x="490" y="195" width="170" height="70" rx="4" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
-                        <text x="575" y="225" fill="#16a34a" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">03. OUR NATURE</text>
-                        <text x="575" y="245" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Mount Makiling & Laguna Lake</text>
-
-                        <!-- Node 4 -->
-                        <rect x="100" y="195" width="170" height="70" rx="4" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
-                        <text x="185" y="225" fill="#059669" font-family="JetBrains Mono" font-size="11" font-weight="700" text-anchor="middle">04. NATURE'S LIMITS</text>
-                        <text x="185" y="245" fill="#475569" font-family="Poppins" font-size="10" text-anchor="middle">Daily Clean Water & Energy</text>
-                    </svg>
+                    <ul class="sphere-item-list">
+                        <li>
+                            <strong>Knowledge:</strong> Ecological literacy cultivated at UPLB, combining scientific sensor networks with indigenous Makiling stewardship.
+                        </li>
+                        <li>
+                            <strong>Technology:</strong> Self-healing bacterial bio-concrete, clean closed-loop geothermal turbines, and vertical aeroponic agriculture.
+                        </li>
+                        <li>
+                            <strong>Population:</strong> 280,000 residents living in hyper-compact vertical spires rather than suburban sprawl, releasing 78% of land back to wildlife.
+                        </li>
+                        <li>
+                            <strong>Social Organization:</strong> Weekly barangay assemblies, cooperative resource pooling, and intergenerational youth councils with municipal veto power.
+                        </li>
+                        <li>
+                            <strong>Values:</strong> Collective Bayanihan, respect for ecological limits, intergenerational justice, and prioritizing community survival over profit.
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="dynamics-explanation-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                    <div class="loop-card">
-                        <h4>01. Our People</h4>
+                <!-- Right Sphere: The Ecosystem -->
+                <div class="sphere-card">
+                    <div class="sphere-header green">
+                        <h3>02. The Ecosystem</h3>
+                        <span class="badge" style="color: #16a34a !important;">BIOPHYSICAL SPHERE</span>
+                    </div>
+                    <p style="font-size: 0.92rem; color: var(--c-text-secondary); line-height: 1.65;">
+                        The living and non-living biophysical environment of the Makiling-Laguna watershed. Every component is dynamically linked:
+                    </p>
+
+                    <div class="component-pills">
+                        <span class="component-pill green">Plants</span>
+                        <span class="component-pill green">Animals</span>
+                        <span class="component-pill green">Micro-organisms</span>
+                        <span class="component-pill green">Air</span>
+                        <span class="component-pill green">Water</span>
+                        <span class="component-pill green">Soil</span>
+                        <span class="component-pill green">Human-built Structures</span>
+                    </div>
+
+                    <ul class="sphere-item-list green">
+                        <li>
+                            <strong>Plants & Flora:</strong> Mount Makiling primary rainforest canopy, native Narra corridors, and vertical building gardens.
+                        </li>
+                        <li>
+                            <strong>Animals & Fauna:</strong> Protected endemic Philippine spotted deer, native pollinators, and freshwater fish in Laguna de Bay.
+                        </li>
+                        <li>
+                            <strong>Micro-organisms:</strong> Mycorrhizal fungal networks in mountain soil and calcite-forming bacteria embedded in tower concrete.
+                        </li>
+                        <li>
+                            <strong>Air & Atmosphere:</strong> Mountain-induced convection breezes, cool forest mist, and zero combustion emissions.
+                        </li>
+                        <li>
+                            <strong>Water Systems:</strong> The restored freshwater basin of Laguna de Bay, mountain aquifers, and gravity-fed rain collection.
+                        </li>
+                        <li>
+                            <strong>Soil & Geology:</strong> Volcanic soils enriched by organic compost, stabilized mountain slopes, and zero chemical leachate.
+                        </li>
+                        <li>
+                            <strong>Human-Built Structures:</strong> Forty-story biophilic spires, elevated transit skyways, and wetland boardwalk filters.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- The Reciprocal Flows & Feedback Loops Card -->
+            <div class="flows-banner-card">
+                <div class="section-header-block" style="padding: 0; margin-bottom: 0.5rem;">
+                    <span class="section-tag">Reciprocal Flows</span>
+                    <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--c-text-primary);">The Four Connecting Channels of Los Baños 2055</h3>
+                    <p style="font-size: 0.95rem; color: var(--c-text-secondary);">
+                        How human society and the biophysical landscape exchange energy, materials, and information to maintain an ongoing living balance.
+                    </p>
+                </div>
+
+                <div class="flows-grid">
+                    <div class="flow-item">
+                        <h5>➔ Human Activities (Social ➔ Eco)</h5>
                         <p>
-                            Mutual aid (Bayanihan), weekly assemblies, and intergenerational voting ensure every voice counts.
+                            Deliberate actions undertaken by citizens: vertical urban consolidation, wetland reforestation, banning toxic chemicals, and ecological monitoring.
                         </p>
                     </div>
 
-                    <div class="loop-card">
-                        <h4>02. Our Buildings</h4>
+                    <div class="flow-item">
+                        <h5>➔ Energy, Material, Information (Social ➔ Eco)</h5>
                         <p>
-                            Bio-concrete spires, solar windows, and shaded bridges that cool the town and eliminate traffic smog.
+                            Physical and informational outputs released into nature: composted bio-nutrients for soils, sensor signals, and targeted misting dome cooling during heatwaves.
                         </p>
                     </div>
 
-                    <div class="loop-card">
-                        <h4>03. Our Nature</h4>
+                    <div class="flow-item">
+                        <h5>⬅ Ecosystem Services (Eco ➔ Social)</h5>
                         <p>
-                            Continuous canopy corridors connecting Mount Makiling's cloud forests all the way to Laguna de Bay's clean shoreline.
+                            Life-support goods and services provided by nature: 65L/day of pure drinking water from Makiling, fresh fish from the lake, thermal cooling, and flood protection.
                         </p>
                     </div>
 
-                    <div class="loop-card">
-                        <h4>04. Nature's Limits</h4>
+                    <div class="flow-item">
+                        <h5>⬅ Energy, Material, Information (Eco ➔ Social)</h5>
                         <p>
-                            Living strictly within the daily water and energy capacity that nature regenerates, preventing ecological collapse.
+                            Inputs and feedbacks received from nature: geothermal baseload power, solar radiation, seasonal typhoon warnings, and canopy humidity telemetry that guides resource rationing.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4 Core Pillars -->
+        <!-- 4 Core Foundations Applied to 2055 -->
         <section class="pillars-section">
             <div class="section-header-block">
-                <span class="section-tag">Four Core Pillars</span>
-                <h2 class="section-main-title">The Foundations of Human Ecology</h2>
+                <span class="section-tag">Practical Application</span>
+                <h2 class="section-main-title">Human Ecology in Practice: Los Baños 2055</h2>
                 <p class="section-description">
-                    The four guiding principles taught at UPLB that helped Los Baños thrive through mid-century climate challenges.
+                    How applying Marten's framework transformed municipal policy and community survival.
                 </p>
             </div>
 
@@ -171,11 +231,11 @@
                 <!-- Pillar: Humans and Nature as One Living System -->
                 <div class="pillar-row-card">
                     <div class="pillar-title-group">
-                        <h3>Humans and Nature as One Living System</h3>
+                        <h3>Co-Evolutionary Balance</h3>
                     </div>
                     <div class="pillar-desc-group">
                         <p>
-                            A city is not separate from its environment. It is an organ of the landscape. What harms Mount Makiling's watershed directly impacts our drinking water, and what revitalizes the lake restores our food supply.
+                            A city is not an isolated bubble placed upon the landscape; it is a metabolic organ of the watershed. A change in the Social System (e.g. changing values toward mutual aid) directly produces positive changes in the Ecosystem (e.g. cleaner lake waters and reforested slopes).
                         </p>
                     </div>
                 </div>
@@ -183,11 +243,11 @@
                 <!-- Pillar: Living Within Ecological Carrying Capacity -->
                 <div class="pillar-row-card">
                     <div class="pillar-title-group">
-                        <h3>Living Within Ecological Carrying Capacity</h3>
+                        <h3>Respecting Carrying Capacity</h3>
                     </div>
                     <div class="pillar-desc-group">
                         <p>
-                            Rather than consuming endlessly, our community matches its daily resource use to what the sun, rainfall, and geothermal systems naturally regenerate each day.
+                            Rather than demanding endless growth, our Social System matches its resource consumption to the natural regenerative rate of Makiling's ecosystems. Household bio-quotas prevent the overdrawing of natural capital.
                         </p>
                     </div>
                 </div>
@@ -195,11 +255,11 @@
                 <!-- Pillar: Community Equity and Bayanihan -->
                 <div class="pillar-row-card">
                     <div class="pillar-title-group">
-                        <h3>Community Equity and Bayanihan</h3>
+                        <h3>Social Organization & Equity</h3>
                     </div>
                     <div class="pillar-desc-group">
                         <p>
-                            A truly sustainable city cannot be an exclusive enclave for the rich. Clean air, fresh water, and storm-resilient housing are community rights shared equally through cooperative ownership and mutual aid.
+                            Ecological survival requires social justice. When resource distribution is equitable and managed cooperatively through Bayanihan, communities avoid ecological degradation driven by poverty or luxury waste.
                         </p>
                     </div>
                 </div>
@@ -207,11 +267,11 @@
                 <!-- Pillar: Intergenerational Responsibility -->
                 <div class="pillar-row-card">
                     <div class="pillar-title-group">
-                        <h3>Intergenerational Responsibility</h3>
+                        <h3>Closed Feedback Loops</h3>
                     </div>
                     <div class="pillar-desc-group">
                         <p>
-                            Decisions are evaluated on a 50-to-100-year horizon. Youth councils hold permanent seats in municipal governance, ensuring long-term stewardship over quick short-term convenience.
+                            Linear systems create pollution by ignoring consequences. Los Baños closed every feedback loop: organic waste becomes agricultural soil, greywater is filtered through wetland reeds, and decisions are evaluated on 50-year generational horizons.
                         </p>
                     </div>
                 </div>
@@ -275,9 +335,9 @@
             <div class="references-card">
                 <h4>Academic References (UPLB Course Foundations):</h4>
                 <ul class="references-list">
+                    <li><strong>Marten, G. G. (2001).</strong> <em>Human Ecology: Basic Concepts for Sustainable Development.</em> Earthscan Publications. (The Human Ecosystem Model: Interactions between Social System and Ecosystem).</li>
                     <li><strong>College of Human Ecology, UPLB.</strong> <em>Fundamentals of Human Ecology: Living Systems and Community Well-Being.</em> UPLB Press.</li>
                     <li><strong>Santos, M. (2044).</strong> <em>Green Vertical Architecture and Community Living in Laguna.</em> Philippine Journal of Human Ecology.</li>
-                    <li><strong>Odum, H.T.</strong> <em>Environment, Power, and Society: Principles of Ecological Engineering.</em></li>
                 </ul>
             </div>
         </section>
