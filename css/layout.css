@@ -100,6 +100,28 @@
     font-weight: 700;
 }
 
+/* ── Mobile Header (stacked brand + wrapping nav) ── */
+@media (max-width: 640px) {
+    .header-container {
+        flex-direction: column;
+        gap: 0.65rem;
+        padding: 0.85rem 1rem 0.95rem;
+        text-align: center;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.35rem;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.78rem;
+    }
+}
+
 /* ── Main Content Layout ── */
 .main-content {
     max-width: 960px;
